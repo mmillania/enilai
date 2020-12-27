@@ -1,0 +1,399 @@
+<layout>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cream"
+            tools:context=".LihatSiswaActivity">
+
+            <TextView
+                android:id="@+id/tJudulDataPenilaian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Data Penilaian Siswa"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearBiodata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tJudulDataPenilaian">
+
+                <TextView
+                    android:id="@+id/editTextNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tJudulDataPenilaian" />
+
+                <TextView
+                    android:id="@+id/editTextNomer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNama" />
+
+
+                <TextView
+                    android:id="@+id/editTextKelas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextNomer" />
+
+                <TextView
+                    android:id="@+id/spinnerSemester"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:entries="@array/semester"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSemester" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearNilaiTugas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearBiodata">
+
+                <LinearLayout
+                    android:id="@+id/linerlayout1"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/textViewHasilNilaiTugas"
+                        android:layout_width="43dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/eNilaiTugas22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textSize="30px" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearPenilaian"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearNilaiTugas">
+
+                <TextView
+                    android:id="@+id/eNPH"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/eNPTS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/eNPAS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/eSpiritual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/eSosial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/textViewNilaiAkhir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="12dp"
+                    android:text="NILAI AKHIR :  "
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewHasilNilaiAkhir"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textViewNilaiRapot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="12dp"
+                    android:text="NILAI RAPOT :  "
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewHasilNilaiRapot"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

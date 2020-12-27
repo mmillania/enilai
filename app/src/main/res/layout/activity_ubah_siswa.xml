@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cream"
+        tools:context=".UbahSiswaActivity">
+
+        <TextView
+            android:id="@+id/tJudulDataPenilaian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Form Data Penilaian Siswa"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearBiodata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tJudulDataPenilaian">
+
+            <EditText
+                android:id="@+id/editTextNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="Nama Siswa"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tJudulDataPenilaian" />
+
+            <EditText
+                android:id="@+id/editTextNomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="NISN Siswa"
+                android:inputType="number"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNama" />
+
+
+            <EditText
+                android:id="@+id/editTextKelas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Kelas Siswa"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNomer" />
+
+            <TextView
+                android:id="@+id/textViewSemester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="6dp"
+                android:text="Pilih Semester"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextKelas" />
+
+            <Spinner
+                android:id="@+id/spinnerSemester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:entries="@array/semester"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSemester" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearNilaiTugas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearBiodata">
+
+            <LinearLayout
+                android:id="@+id/linerlayout1"
+                android:layout_width="216dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/eNilaiTugas1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 1"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 2"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 3"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 4"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 5"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 6"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 7"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 8"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 9"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 10"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 11"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/textViewNilaiTugas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="12dp"
+                    android:text="NPH :  "
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewHasilNilaiTugas"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/eNilaiTugas12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 12"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 13"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 14"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 15"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 16"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 17"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 18"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 19"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 20"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 21"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <EditText
+                    android:id="@+id/eNilaiTugas22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nilai Tugas Harian 22"
+                    android:inputType="number"
+                    android:textSize="30px" />
+
+                <Button
+                    android:id="@+id/bHitungNPH"
+                    android:layout_width="130dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Hitung NPH"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearPenilaian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearNilaiTugas">
+
+            <EditText
+                android:id="@+id/eNPH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="Nilai NPH "
+                android:inputType="number"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/eNPTS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Nilai NPTS"
+                android:inputType="number"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/eNPAS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Nilai NPAS"
+                android:inputType="number"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/eSpiritual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Nilai Sikap Spiritual"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent" />
+            <EditText
+                android:id="@+id/eSosial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Nilai Sikap Sosial"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textViewNilaiAkhir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="12dp"
+                android:text="NILAI AKHIR :  "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewHasilNilaiAkhir"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textViewNilaiRapot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="12dp"
+                android:text="NILAI RAPOT :  "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewHasilNilaiRapot"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0" />
+
+
+
+            <Button
+                android:id="@+id/bHitungNilaiAkhir"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@color/yellow"
+                android:layout_marginTop="12dp"
+                android:text="Hitung Nilai Akhir"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/bSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/biru"
+                android:text="Ubah dan Simpan Data"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

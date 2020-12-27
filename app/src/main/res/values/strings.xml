@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">E - N I L A I</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">E-NILAI</string>
+    <string name="nav_header_subtitle">By: mmillania09@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Informasi Pribadi</string>
+    <string name="menu_gallery">Data Siswa</string>
+    <string name="menu_slideshow">Kompetensi Dasar</string>
+
+
+    <string name="judulLogin">Aplikasi E-Nilai Siswa Sekolah Dasar</string>
+    <array name="semester">
+        <item>Ganjil</item>
+        <item>Genap</item>
+    </array>
+</resources>
