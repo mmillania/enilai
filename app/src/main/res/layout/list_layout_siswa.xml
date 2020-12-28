@@ -13,7 +13,7 @@
         android:layout_marginTop="32dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tJudulDataSiswa">
+        app:layout_constraintTop_toBottomOf="@+id/gambards">
 
 
         <TextView
@@ -56,13 +56,14 @@
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="107dp"
-        android:layout_height="142dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toEndOf="@+id/linearLayout1"
-        app:layout_constraintTop_toBottomOf="@+id/tJudulDataSiswa">
+        app:layout_constraintTop_toBottomOf="@+id/gambards">
 
 
         <Button

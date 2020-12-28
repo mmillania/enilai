@@ -7,31 +7,28 @@
     tools:context=".ui.siswa.GalleryFragment"
     android:background="@color/cream">
 
-    <TextView
-        android:id="@+id/tJudulDataSiswa"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="DATA SISWA"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/gambards"
+        android:layout_width="458dp"
+        android:layout_height="303dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ds" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleSiswa"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toTopOf="@+id/tambahFab"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tJudulDataSiswa" />
+        app:layout_constraintTop_toBottomOf="@+id/gambards" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/tambahFab"
