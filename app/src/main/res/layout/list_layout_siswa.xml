@@ -67,24 +67,24 @@
 
         <Button
             android:id="@+id/bLihat"
-            android:layout_width="107dp"
-            android:layout_height="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
             android:layout_margin="5dp"
             android:background="@color/hijau"
             android:text="Detail" />
 
         <Button
             android:id="@+id/bEdit"
-            android:layout_width="107dp"
-            android:layout_height="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
             android:layout_margin="5dp"
             android:background="@color/yellow"
             android:text="Edit" />
 
         <Button
             android:id="@+id/bHapus"
-            android:layout_width="107dp"
-            android:layout_height="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
             android:layout_margin="5dp"
             android:background="@color/red"
             android:text="Hapus" />

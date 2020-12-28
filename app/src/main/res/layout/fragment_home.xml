@@ -16,8 +16,8 @@
 
         <TextView
             android:id="@+id/tLabelNamaLengkap"
-            android:layout_width="131dp"
-            android:layout_height="24dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="72dp"
             android:text="Nama Lengkap : "
@@ -26,13 +26,15 @@
 
         <TextView
             android:id="@+id/tNamaLengkap"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="76dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="16dp"
             android:text="@{viewModel.user.namalengkap}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/tLabelNamaLengkap"
-            app:layout_constraintTop_toTopOf="@+id/tLabelNamaLengkap" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tLabelNIP"
@@ -45,11 +47,13 @@
 
         <TextView
             android:id="@+id/tNIP"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
             android:text="@{String.valueOf(viewModel.user.nip)}"
-            app:layout_constraintStart_toStartOf="@+id/tNamaLengkap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tLabelNIP"
             app:layout_constraintTop_toBottomOf="@+id/tNamaLengkap" />
 
         <TextView
@@ -69,7 +73,8 @@
             android:layout_marginEnd="16dp"
             android:text="@{viewModel.user.alamat}"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/tNIP"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tLabelAlamat"
             app:layout_constraintTop_toBottomOf="@+id/tNIP" />
 
         <TextView
@@ -83,11 +88,13 @@
 
         <TextView
             android:id="@+id/tMapel"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
             android:text="@{viewModel.user.mapel}"
-            app:layout_constraintStart_toStartOf="@+id/tAlamat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tLabelMapel"
             app:layout_constraintTop_toBottomOf="@+id/tAlamat" />
 
         <TextView
@@ -101,11 +108,13 @@
 
         <TextView
             android:id="@+id/tUsername"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
             android:text="@{viewModel.user.username}"
-            app:layout_constraintStart_toStartOf="@+id/tMapel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tLabelUsername"
             app:layout_constraintTop_toBottomOf="@+id/tMapel" />
 
         <TextView
@@ -119,13 +128,14 @@
 
         <TextView
             android:id="@+id/tPassword"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
             android:text="@{viewModel.user.password}"
-            app:layout_constraintStart_toStartOf="@+id/tUsername"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tLabelPassword"
             app:layout_constraintTop_toBottomOf="@+id/tUsername" />
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
