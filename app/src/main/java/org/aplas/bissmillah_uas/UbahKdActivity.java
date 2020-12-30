@@ -30,6 +30,7 @@ public class UbahKdActivity extends AppCompatActivity {
         bSimpan = findViewById(R.id.bSimpan);
 
         Intent intent = getIntent();
+        //ambil data
         final String id = intent.getStringExtra("id");
         Cursor cursorKd = Database.mDatabase.rawQuery("SELECT * FROM kd WHERE id=?;",
                 new String[]{intent.getStringExtra("id")});
@@ -57,6 +58,7 @@ public class UbahKdActivity extends AppCompatActivity {
                         && !editTextTema3.getText().toString().equals("")
                         && !editTextTema4.getText().toString().equals("")
                 ){
+                    //update tabel di database
                     String sql = "UPDATE kd \n" +
                             "SET nokd = ?, \n" +
                             "namakd = ?, \n" +

@@ -19,6 +19,7 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //pengenalan layout
         binding = DataBindingUtil.setContentView(this, R.layout.activity_register);
         binding.bRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,7 +36,7 @@ public class RegisterActivity extends AppCompatActivity {
                 String joiningdate = sdf.format(cal.getTime());
 
 
-                //validasi menambahkan data registerS
+                //validasi menambahkan data register
                 if (namalengkap.equals("") || nip.equals("") || alamat.equals("") || mapel.equals("")
                         || username.equals("") || password.equals("")){
                     Toast.makeText(binding.getRoot().getContext(), "Harap isi semua data!",

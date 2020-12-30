@@ -18,6 +18,7 @@ public class LihatKdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_lihat_kd);
 
+        //LIHAT DATA KD
         Intent intent = getIntent();
         final String id = intent.getStringExtra("id");
         Cursor cursorKd = Database.mDatabase.rawQuery("SELECT * FROM kd WHERE id=?;",

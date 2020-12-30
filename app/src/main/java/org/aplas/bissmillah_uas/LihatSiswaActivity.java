@@ -19,6 +19,7 @@ public class LihatSiswaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_lihat_siswa);
 
+        //LIHAT DATA SISWA
         Intent intent = getIntent();
         final String id = intent.getStringExtra("id");
         Cursor cursorSiswa = Database.mDatabase.rawQuery("SELECT * FROM siswa WHERE id=?;",

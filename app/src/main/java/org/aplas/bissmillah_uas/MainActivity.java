@@ -35,6 +35,7 @@ private ActivityMainBinding binding;
         binding.bLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //logic login
                 String username = binding.eUsername.getText().toString().trim();
                 String password = binding.ePassword.getText().toString().trim();
                 if(username.equals("") ||password.equals("")){
@@ -42,6 +43,7 @@ private ActivityMainBinding binding;
                             Toast.LENGTH_SHORT).show();
                 }else{
 
+                    //Buat Registrasi Akun
                     Cursor cursorUser = Database.mDatabase.rawQuery("SELECT * FROM user", null);
 
                     //if the cursor has some data

@@ -20,6 +20,7 @@ public class TambahKdActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tambah_kd);
+        //pengenalan layout
         editTextNoKD = findViewById(R.id.editTextNoKD);
         editTextKompetensiDasar = findViewById(R.id.editTextKompetensiDasar);
         editTextTema1 = findViewById(R.id.editTextTema1);
@@ -38,6 +39,7 @@ public class TambahKdActivity extends AppCompatActivity {
                         && !editTextTema3.getText().toString().equals("")
                         && !editTextTema4.getText().toString().equals("")
                 ){
+                    //proses menambahkan ke tabel kd
                     String insertSQL = "INSERT INTO kd \n" +
                             "(nokd, namakd, t1, t2, t3, t4)\n" +
                             "VALUES \n" +
